@@ -14,6 +14,12 @@ body {
     width: 352px;
     height: 198px;
     margin: 0 auto;
-    margin-top: 20px;
     outline: 1px solid #fff;
+    /*scales the canvas and moves it down a little bit*/
+    transform: scale(3) translateY(50%);
+}
+
+.game-container canvas {
+    /*takes the canvas and rendered image in canvas and removes blurriness due to scaled images*/
+    image-rendering: pixelated;
 }
